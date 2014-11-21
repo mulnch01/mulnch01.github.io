@@ -1,0 +1,73 @@
+<html>
+<head>
+<style>
+nav {
+  position: relative;
+  margin: 40px;
+  float: left;
+  height: 100px;
+  width: 120px;
+}
+input {
+  position:absolute;
+  top: 80px;
+  margin: 50px;
+}
+input:checked ~ .question {
+  background-color: lightblue;
+}
+section {
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  border: 4px solid green;
+  background-color: blue;
+  border-radius: 10px;
+}
+  .question {
+    background-color: cyan;
+  }
+  .answer= {
+    background-color: purple;
+    z-index: -1;
+  }
+  nav:hover .question {
+    display: none;
+  }
+  input: checked~.question {
+    background-color: lightblue;
+  }
+</style>
+</head>
+<body>
+  <nav>
+  <input type="checkbox">
+  <section class="answer">
+<p>Zeta Tau Psi</p>
+</section>
+<section class="question">
+<p>What is the best fraternity at Luther College?</p>
+</section>
+</nav>
+<nav>
+<input type="checkbox">
+<section class="answer">
+  <p>Miller</p>
+</section>
+<section class="question">
+  <p>What dorm do I live in?</p>
+</section>
+</nav>
+<nav>
+<input type="checkbox">
+<section class="answer">
+  <p>Steak</p>
+</section>
+<section class="question">
+  <p>What is my favorite food?</p>
+  </section>
+  </nav>
+</body>
+</html>
